@@ -1,0 +1,21 @@
+.log {
+	border-style: solid;
+	border-width: thick;
+	padding: 5px;
+}
+.log p:nth-child(even) {
+	background: #f0f0f0;
+}
+.fixed {
+	position: fixed;
+}
+.scrollable {
+	float: left;
+}
+body {
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+#navbar {
+	padding-right: 5px;
+}

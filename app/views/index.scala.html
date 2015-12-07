@@ -1,0 +1,40 @@
+@(title: String)
+<!-- Because this is Scala, we can pass variables to our html pages -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>@title</title>
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
+		<link rel="stylesheet" media="screen" href="@routes.Assets.at("css/default.css")">
+		<link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+	</head>
+	<body>
+		<!--Here's an example toolbar. It's pretty meh. -->
+		<nav class="navbar navbar-fixed-top hidden-xs">
+			<div id="navbar" class="navbar-collapse collapse">
+			<p class="navbar-brand">@title</p>
+			</div><!--/.navbar-collapse -->
+		</nav>
+
+		<div class="col-sm-3 hidden-xs fixed">
+			<!-- Left Fixed Column -->
+			<!-- This column disappears when the window is mobile phone sized-->
+			
+			
+		</div>
+		<div class="col-sm-9 col-sm-offset-3 col-xs-12 scrollable">
+			<!-- Beginning of real content -->
+			<!-- This part scrolls as per normal, is pushed to the right when not mobile screen sized, but takes up the whole screen when it is-->
+			<div class="log"><p>This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. This is a test of the column system. </p>
+			</div>
+			<div class="log"><p>Log in the middle!</p></div>
+			<div class="log"><p>It's the FINAL COUNTDOWN! BuhnuhNUHnuh! BuhnuhNUHNUHnuhhhh! BuhnuhNUHnuh! BuhnuhNUHNUHNuhNUHnuh!</p></div>
+		</div>
+		
+		<!-- Anything in the "app/assets" folder can be gotten like this -->
+		<!--And since we pointed our routes file to the public folder too, whatever we put in public shows up in the same place -->
+		<script src="@routes.Assets.at("js/d3.v3.min.js")" charset="utf-8"></script>
+		<script src="@routes.Assets.at("js/homebrewed.js")" charset="utf-8"></script>
+	</body>
+</html>

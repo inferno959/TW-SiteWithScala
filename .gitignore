@@ -1,0 +1,15 @@
+#Basic files involved with the activator ui and all that jazz
+**/.sbtserver
+**/.sbtserver.lock
+project/sbt-ui.sbt
+activator
+activator.bat
+activator-launch-*
+RUNNING_PID
+
+#Files involved in compiles and staging
+**/target
+project/project
+
+# Project files
+**/*.conf

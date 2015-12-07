@@ -1,0 +1,21 @@
+@(requestedPath: String)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@requestedPath</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/default.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top hidden-xs">
+			<div id="navbar" class="navbar-collapse collapse">
+			<p class="navbar-brand">@requestedPath</p>
+			</div><!--/.navbar-collapse -->
+		</nav>
+      <div id='padder' class='hidden-xs'></div>
+	  <script src="@routes.Assets.at("js/d3.v3.min.js")" charset="utf-8"></script>
+    </body>
+</html>
