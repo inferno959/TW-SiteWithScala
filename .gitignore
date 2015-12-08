@@ -13,3 +13,6 @@ project/project
 
 # Project files
 **/*.conf
+
+# For later
+twitchApi/
